@@ -10,7 +10,7 @@ fetch('https://pokeapi.co/api/v2/pokemon/?limit=10')
             console.log(result.sprites.front_default, element);
             let imgPokemon = result.sprites.front_default;
             console.log(result.sprites.front_default);
-            pokemonDiv.innerHTML += `<div class="col-4">
+            pokemonDiv.innerHTML += `<div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
                                         <img src="${result.sprites.front_default}" alt="imagen pokemon" class="img-fluid">
                                         <h5>${element.name}</h5>
                                     </div>`
